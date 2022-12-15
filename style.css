@@ -1,0 +1,57 @@
+/* Карточки с видео */ 
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    display: inline-block;
+    margin: 12px;
+    border: 3px solid black;
+    border-radius: 14%;
+    font-family: cursive;
+    text-align: center;
+}
+
+.card > img {
+    border-radius: 15%;
+    width: 460px;
+    height: 264px;
+    object-fit: cover;
+}
+
+.card > .name {
+    /* TODO красивости для названия видео */
+}
+
+.car > .duration {
+    /* TODO: красивотси для продолжительности видео */
+}
+
+/* Диалоговое окно */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(66, 66, 66, 0.808);
+}
+
+.dialog {
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    background: white;
+}
+
+.dialog > video {
+    height: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* красивости юля диалогового окна */ 
