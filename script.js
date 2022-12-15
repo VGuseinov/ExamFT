@@ -43,7 +43,7 @@ loadVideos();
         </div>
     </div>
  */
-
+// https://disk.yandex.ru/d/NbqPShpcGrX8nA/
 
 async function openPlayer(id, name) {
     const resp = await fetch(`${baseURL}/video/${id}`);
